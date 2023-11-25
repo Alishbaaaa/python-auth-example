@@ -17,5 +17,5 @@ jobs:
     - name: Build and Push Docker image
       run: |
         docker build -t alishba567/python-auth-example .
-        docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
+        docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
         docker push alishba567/python-auth-example
